@@ -1,54 +1,30 @@
 # coding-round
-Kelly Leverage Calculator using Yahoo Finance Data
+##Kelly Leverage Calculator using Yahoo Finance Data
 
 This Python script calculates the Kelly-Optimal Leverage for a given set of stock symbols using historical price data obtained from Yahoo Finance. The Kelly criterion is an investment strategy that maximizes the long-term growth rate of wealth and is often used to determine the optimal position size for an asset.
 
-Prerequisites
+###Prerequisites
 
 Before running the script, ensure you have the following Python libraries installed:
 
-pandas
-numpy
-yfinance
+pandas\\
+numpy\\
+yfinance\\
 You can install these libraries using pip:
-
-bash
-Copy code
 pip install pandas numpy yfinance
-How to Use
 
-Import the required libraries and functions:
-python
-Copy code
-import pandas as pd
-import numpy as np
-from numpy.linalg import inv
-import yfinance as yf
-from typing import Set, Dict
-from datetime import date
-Define the function calc_kelly_leverages() to calculate the Kelly-Optimal Leverage for the given stocks:
-python
-Copy code
-def calc_kelly_leverages():
-    # Code implementation (see the code provided in the script)
-    # ...
-    return result
-Run the function and display the results:
-python
-Copy code
-leverages = calc_kelly_leverages()
-for symbol, leverage in leverages.items():
-    print(f"Optimal Leverage for {symbol}: {leverage}")
-Inputs
+
+###How to Use
 
 The script will prompt you to enter the stock symbols you want to analyze. Provide the symbols separated by commas (e.g., "AAPL,GOOGL,MSFT").
 Enter the start date and end date for the historical data in the format "YYYY-MM-DD."
 Input the annualized risk-free rate as a decimal value (e.g., 0.02 for 2%).
-Output
+
+###Output
 
 The script will calculate and display the optimal leverage for each stock symbol provided.
 
-Important Notes
+###Important Notes
 
 The risk-free rate should be an annualized value. The script will adjust it for daily calculations.
 The script uses historical stock price data obtained from Yahoo Finance. Ensure you have a stable internet connection to download the data.
@@ -58,6 +34,5 @@ If the script encounters an error while downloading data for a particular stock 
 Disclaimer
 
 This script is intended for educational and informational purposes only. It does not provide financial advice or recommendations. Use the Kelly-Optimal Leverage results with caution and consider consulting with a financial advisor before making any investment decisions.
-Contributors
 
 If you find any issues with the script or want to improve it, feel free to contribute and create a pull request.
