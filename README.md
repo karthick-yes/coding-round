@@ -1,30 +1,30 @@
 # coding-round
-##Kelly Leverage Calculator using Yahoo Finance Data
+## Kelly Leverage Calculator using Yahoo Finance Data
 
 This Python script calculates the Kelly-Optimal Leverage for a given set of stock symbols using historical price data obtained from Yahoo Finance. The Kelly criterion is an investment strategy that maximizes the long-term growth rate of wealth and is often used to determine the optimal position size for an asset.
 
-###Prerequisites
+### Prerequisites
 
 Before running the script, ensure you have the following Python libraries installed:
 
-pandas\\
-numpy\\
-yfinance\\
+pandas
+numpy
+yfinance
 You can install these libraries using pip:
 pip install pandas numpy yfinance
 
 
-###How to Use
+### How to Use
 
 The script will prompt you to enter the stock symbols you want to analyze. Provide the symbols separated by commas (e.g., "AAPL,GOOGL,MSFT").
 Enter the start date and end date for the historical data in the format "YYYY-MM-DD."
 Input the annualized risk-free rate as a decimal value (e.g., 0.02 for 2%).
 
-###Output
+### Output
 
 The script will calculate and display the optimal leverage for each stock symbol provided.
 
-###Important Notes
+### Important Notes
 
 The risk-free rate should be an annualized value. The script will adjust it for daily calculations.
 The script uses historical stock price data obtained from Yahoo Finance. Ensure you have a stable internet connection to download the data.
